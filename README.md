@@ -1,6 +1,6 @@
 # react-gallery
 
-Beautiful, easy to use gallery for React. *Work in progress. I haven't uploaded this to npm yet.*
+Beautiful, easy to use gallery for React. **Work in progress. I haven't uploaded this to npm yet.**
 
 ## Getting started
 
