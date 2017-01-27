@@ -65,3 +65,9 @@ This will generate thumbnails that have a height of 75px and a proportional widt
 ## Contributing
 
 The usual stuff. PRs are welcome!
+
+## Roadmap
+
+* Thumbnails and title look small in mobile devices. Make them bigger.
+* Since the gallery doesn't load images up-front, transition between images is not exactly smooth. Make nicer transitions.
+* Support youtube videos.
