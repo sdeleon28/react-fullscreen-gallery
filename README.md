@@ -10,7 +10,7 @@ Install with:
 npm install <TO_BE_DEFINED>
 ```
 
-Then include set up your component like this:
+Then set up your component like this:
 
 ```js
 import React from 'react';
@@ -47,12 +47,11 @@ npm install
 npm run dev
 ```
 
-Then open http://localhost:8080/gallery.html in your browser.
+Then open [http://localhost:8080/gallery.html](http://localhost:8080/gallery.html) in your browser.
 
 ## Generating thumbnails
 
-This gallery is optimized to look good with thumbnails that are 75px tall. Assuming you have a set
-of jpg files in a folder, you can easily generate thumbnails for all of them using ImageMagick:
+This gallery is optimized to look good with thumbnails that are 75px tall. Assuming you have a set of jpg files in a folder, you can easily generate thumbnails for all of them using [ImageMagick](http://www.imagemagick.org/script/index.php):
 
 ```bash
 cd /path/to/pictures/
