@@ -39,7 +39,7 @@ const images = [
 ReactDOM.render(<Gallery images={images} />, app);
 ```
 
-That's basically the only way to use the gallery (as of now). This gallery is simple by design. If you want something that you can configure more via props, you should probably check out [react-image-gallery](https://github.com/xiaolin/react-image-gallery) or [react-photo-gallery]https://github.com/neptunian/react-photo-gallery.
+That's basically the only way to use the gallery (as of now). This gallery is simple by design. If you want something that you can configure more via props, you should probably check out [react-image-gallery](https://github.com/xiaolin/react-image-gallery) or [react-photo-gallery](https://github.com/neptunian/react-photo-gallery).
 
 If you'd like to change the styles, you'll have to brute-force some CSS in :-)
 
