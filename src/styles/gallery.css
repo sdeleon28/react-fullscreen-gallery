@@ -1,0 +1,6 @@
+.react-gallery .jspHorizontalBar, .react-gallery .jspTrack {
+  background: transparent !important;
+}
+.react-gallery .jspDrag {
+  background: #505050 !important;
+}

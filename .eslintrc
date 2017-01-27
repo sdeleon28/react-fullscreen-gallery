@@ -1,0 +1,30 @@
+{
+  "plugins": ["react"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb"],
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "react/sort-comp": [1, {
+      "order": [
+        "constructor",
+        "lifecycle",
+        "everything-else",
+        "render"
+      ]
+    }],
+    "react/jsx-filename-extension": [0]
+  },
+  "globals": {
+    "alert": true,
+    "document": true,
+    "window": true,
+    "screen": true,
+    "describe": true,
+    "it": true
+  }
+}
