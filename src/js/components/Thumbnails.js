@@ -46,6 +46,7 @@ class Thumbnails extends React.Component {
     window.removeEventListener('resize', this.setupScrollbar);
   }
 
+
   setupScrollbar() {
     // Remove the extra padding added on jsp-initialised. If I don't do this, jScrollPane gets
     // confused about the height of the component and counts the previous padding in. That makes it
@@ -55,6 +56,9 @@ class Thumbnails extends React.Component {
     $(this.listContainer).bind('jsp-initialised',
       (event, isScrollable) => {
         if (isScrollable) {
+          // Style the scrollbar
+          $(event.target).find('.jspHorizontalBar, .jspTrack').css({ background: 'transparent' });
+          $(event.target).find('.jspDrag').css({ background: '#505050' });
           // When the scrollbar is added, make some room for it so that it doesn't appear too close
           // to the thumbnails.
           $(event.target).find('.jspContainer').css({ paddingBottom: 14 });
