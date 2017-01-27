@@ -1,5 +1,5 @@
 {
-  "name": "react-gallery",
+  "name": "react-fullscreen-gallery",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sdeleon28/react-gallery.git"
+    "url": "git+https://github.com/sdeleon28/react-fullscreen-gallery.git"
   },
   "author": "Santiago de Leon <sdeleon28@gmail.com> (doyoubuzz.com/santiago-de-leon)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sdeleon28/react-gallery/issues"
+    "url": "https://github.com/sdeleon28/react-fullscreen-gallery/issues"
   },
-  "homepage": "https://github.com/sdeleon28/react-gallery#readme",
+  "homepage": "https://github.com/sdeleon28/react-fullscreen-gallery#readme",
   "dependencies": {
     "jquery": "^3.1.1",
     "jscrollpane": "^2.0.22",

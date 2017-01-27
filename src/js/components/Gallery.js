@@ -71,7 +71,7 @@ class Gallery extends React.Component {
     const { selectedImage, images, onImageSelected } = this.props;
     return (
       <div
-        className="react-gallery"
+        className="react-fullscreen-gallery"
         ref={background => { this.background = background; }}
         style={{ ...styles.container, backgroundImage: `url(${selectedImage.imageUrl})` }}
         onMouseDown={this.toggleThumbnailsAndTitle}

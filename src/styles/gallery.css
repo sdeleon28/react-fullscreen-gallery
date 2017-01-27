@@ -1,6 +1,6 @@
-.react-gallery .jspHorizontalBar, .react-gallery .jspTrack {
+.react-fullscreen-gallery .jspHorizontalBar, .react-fullscreen-gallery .jspTrack {
   background: transparent !important;
 }
-.react-gallery .jspDrag {
+.react-fullscreen-gallery .jspDrag {
   background: #505050 !important;
 }

@@ -1,15 +1,15 @@
-# react-gallery
+# react-fullscreen-gallery
 
-Beautiful, easy to use gallery for React.
+Beautiful, easy-to-use gallery for React.
 
-**Work in progress. I haven't uploaded this to npm yet.**
+This gallery was originally designed to look good as a fullscreen component, but you can also confine it within a box of your choice.
 
 ## Getting started
 
 Install with:
 
 ```
-npm install <TO_BE_DEFINED>
+npm install react-fullscreen-gallery
 ```
 
 Then set up your component like this:
@@ -17,7 +17,7 @@ Then set up your component like this:
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Gallery from 'react-gallery';
+import Gallery from 'react-fullscreen-gallery';
 
 const app = document.getElementById('app');
 
@@ -48,7 +48,7 @@ If you'd like to change the styles, you'll have to brute-force some CSS in :-)
 Run:
 
 ```bash
-git clone https://github.com/sdeleon28/react-gallery.git
+git clone https://github.com/sdeleon28/react-fullscreen-gallery.git
 npm install
 npm run dev
 ```
