@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sdeleon28/react-gallery-private.git"
+    "url": "git+https://github.com/sdeleon28/react-gallery.git"
   },
   "author": "Santiago de Leon <sdeleon28@gmail.com> (doyoubuzz.com/santiago-de-leon)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sdeleon28/react-gallery-private/issues"
+    "url": "https://github.com/sdeleon28/react-gallery/issues"
   },
-  "homepage": "https://github.com/sdeleon28/react-gallery-private#readme",
+  "homepage": "https://github.com/sdeleon28/react-gallery#readme",
   "dependencies": {
     "jquery": "^3.1.1",
     "jscrollpane": "^2.0.22",
