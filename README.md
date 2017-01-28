@@ -19,6 +19,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Gallery from 'react-fullscreen-gallery';
 
+// Include jScrollPane styles (either like this or with a link in your HTML)
+require('/path/to/node_modules/jscrollpane/style/jquery.jscrollpane.css');
+
 const app = document.getElementById('app');
 
 const images = [
