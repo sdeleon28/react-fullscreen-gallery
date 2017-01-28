@@ -5,6 +5,9 @@ import Gallery from '../../../src/js/index';
 
 const app = document.getElementById('app');
 
+// Include jScrollPane styles (either like this or with a link in your HTML)
+require('../../../node_modules/jscrollpane/style/jquery.jscrollpane.css');
+
 /* eslint-disable */
 const images = [
   [require('../img/01.jpg'), require('../img/01-thumb.jpg'), 'New York moving'],
