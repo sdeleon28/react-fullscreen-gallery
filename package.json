@@ -3,7 +3,8 @@
   "version": "1.0.6",
   "description": "",
   "scripts": {
-    "prepublish": "node_modules/babel-cli/bin/babel.js src --out-dir lib",
+    "prepublish": "npm run build",
+    "build": "node_modules/babel-cli/bin/babel.js src --out-dir lib",
     "lint": "eslint --ext .js,.jsx src",
     "dev": "webpack-dev-server --inline --hot"
   },
