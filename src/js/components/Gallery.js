@@ -14,6 +14,7 @@ const styles = {
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     overflow: 'hidden',
+    position: 'relative',
   },
   titleContainer: {
     display: 'block',
