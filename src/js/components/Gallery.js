@@ -55,13 +55,17 @@ class Gallery extends React.Component {
     const { thumbnailsAndTitleVisible } = this.state;
     if (thumbnailsAndTitleVisible) {
       $(this.thumbnails).animate({ top: -120 }, 300);
-      $(this.titleContainer).animate({ bottom: -100 }, 300);
+      if (this.titleContainer) {
+        $(this.titleContainer).animate({ bottom: -100 }, 300);
+      }
       this.setState({
         thumbnailsAndTitleVisible: false,
       });
     } else {
       $(this.thumbnails).animate({ top: 0 }, 300);
-      $(this.titleContainer).animate({ bottom: 0 }, 300);
+      if (this.titleContainer) {
+        $(this.titleContainer).animate({ bottom: 0 }, 300);
+      }
       this.setState({
         thumbnailsAndTitleVisible: true,
       });
@@ -69,20 +73,22 @@ class Gallery extends React.Component {
   }
 
   render() {
-    const { selectedImage, images, onImageSelected } = this.props;
+    const { images, onImageSelected, imageUrl, title } = this.props;
     return (
       <div
         className="react-fullscreen-gallery"
         ref={background => { this.background = background; }}
-        style={{ ...styles.container, backgroundImage: `url(${selectedImage.imageUrl})` }}
+        style={{ ...styles.container, backgroundImage: `url(${imageUrl})` }}
         onMouseDown={this.toggleThumbnailsAndTitle}
       >
-        <div
-          style={styles.titleContainer}
-          ref={titleContainer => { this.titleContainer = titleContainer; }}
-        >
-          <h1 style={styles.title}>{selectedImage.title}</h1>
-        </div>
+        { title !== null &&
+          <div
+            style={styles.titleContainer}
+            ref={titleContainer => { this.titleContainer = titleContainer; }}
+          >
+            <h1 style={styles.title}>{title}</h1>
+          </div>
+        }
         <div
           style={styles.thumbnailsWrapper}
           ref={thumbnails => { this.thumbnails = thumbnails; }}
@@ -99,7 +105,13 @@ class Gallery extends React.Component {
 
 Gallery.propTypes = {
   ...Thumbnails.propTypes,
-  selectedImage: pt.shape(Thumbnail.propTypes),
+  onImageSelected: pt.func.isRequired,
+  imageUrl: pt.string.isRequired,
+  title: pt.string,
+};
+
+Gallery.defaultProps = {
+  title: null,
 };
 
 export default Gallery;

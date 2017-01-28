@@ -24,9 +24,11 @@ class GalleryContainer extends React.Component {
       selected: index === this.state.selectedImageIndex,
     }));
     const selectedImage = images.find(image => image.selected);
+    const { imageUrl, title } = selectedImage;
     return (
       <Gallery
-        selectedImage={selectedImage}
+        imageUrl={imageUrl}
+        title={title}
         images={images}
         onImageSelected={this.onImageSelected}
       />
