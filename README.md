@@ -46,9 +46,11 @@ That's basically the only way to use the gallery (as of now). This gallery is si
 
 If you'd like to change the styles, you'll have to brute-force some CSS in :-)
 
-## Try the example
+## Demo
 
-Run:
+See the live demo at [https://sdeleon28.github.io/react-fullscreen-gallery/](https://sdeleon28.github.io/react-fullscreen-gallery/)
+
+Or you can try it locally by running: 
 
 ```bash
 git clone https://github.com/sdeleon28/react-fullscreen-gallery.git
@@ -56,7 +58,7 @@ npm install
 npm run dev
 ```
 
-Then open [http://localhost:8080/gallery.html](http://localhost:8080/gallery.html) in your browser.
+Then open [http://localhost:8080/react-fullscreen-gallery/](http://localhost:8080/react-fullscreen-gallery/) in your browser.
 
 ## Generating thumbnails
 
