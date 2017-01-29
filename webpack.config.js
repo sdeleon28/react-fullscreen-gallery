@@ -5,7 +5,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const debug = process.env.NODE_ENV !== 'production';
 
 
-const PLUGINS = [new CopyWebpackPlugin([{ from: './examples/index.html' }])];
+const PLUGINS = [
+  new CopyWebpackPlugin([{ from: './examples/index.html' }]),
+  new CopyWebpackPlugin([{ from: './deploy_key.enc' }]),
+];
 
 module.exports = {
   context: __dirname,
