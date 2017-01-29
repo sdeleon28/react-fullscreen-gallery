@@ -31,7 +31,7 @@ SHA=`git rev-parse --verify HEAD`
 git clone $REPO examples/dist
 cd examples/dist
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
-cd ..
+cd ../../
 
 # Clean out existing contents
 rm -rf examples/dist/**/* || exit 0
