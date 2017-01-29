@@ -4,6 +4,20 @@ Beautiful, easy-to-use gallery for React.
 
 This gallery was originally designed to look good as a fullscreen component, but you can also confine it within a box of your choice.
 
+## Demo
+
+See the live demo at [https://sdeleon28.github.io/react-fullscreen-gallery/](https://sdeleon28.github.io/react-fullscreen-gallery/)
+
+Or you can try it locally by running: 
+
+```bash
+git clone https://github.com/sdeleon28/react-fullscreen-gallery.git
+npm install
+npm run dev
+```
+
+Then open [http://localhost:8080/react-fullscreen-gallery/](http://localhost:8080/react-fullscreen-gallery/) in your browser.
+
 ## Getting started
 
 Install with:
@@ -45,20 +59,6 @@ ReactDOM.render(<Gallery images={images} />, app);
 That's basically the only way to use the gallery (as of now). This gallery is simple by design. If you want something that you can configure more via props, you should probably check out [react-image-gallery](https://github.com/xiaolin/react-image-gallery) or [react-photo-gallery](https://github.com/neptunian/react-photo-gallery).
 
 If you'd like to change the styles, you'll have to brute-force some CSS in :-)
-
-## Demo
-
-See the live demo at [https://sdeleon28.github.io/react-fullscreen-gallery/](https://sdeleon28.github.io/react-fullscreen-gallery/)
-
-Or you can try it locally by running: 
-
-```bash
-git clone https://github.com/sdeleon28/react-fullscreen-gallery.git
-npm install
-npm run dev
-```
-
-Then open [http://localhost:8080/react-fullscreen-gallery/](http://localhost:8080/react-fullscreen-gallery/) in your browser.
 
 ## Generating thumbnails
 
