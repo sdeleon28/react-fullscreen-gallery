@@ -35,6 +35,8 @@ cd ../../
 
 # Clean out existing contents
 rm -rf examples/dist/**/* || exit 0
+rm -rf examples/dist/* || exit 0
+rm -rf examples/dist/*.* || exit 0
 
 # Run our compile script
 doCompile
