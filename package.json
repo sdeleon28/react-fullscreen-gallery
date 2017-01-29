@@ -5,6 +5,7 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "node_modules/babel-cli/bin/babel.js src --out-dir lib",
+    "demo": "webpack",
     "lint": "eslint --ext .js,.jsx src",
     "dev": "webpack-dev-server --inline --hot"
   },
