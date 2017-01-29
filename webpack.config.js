@@ -29,11 +29,11 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, '/examples/dist'),
-    publicPath: '/examples/dist',
+    publicPath: '/',
     filename: 'index.js',
   },
   devServer: {
-    contentBase: path.join(__dirname, '/'),
+    contentBase: path.join(__dirname, '/examples/dist'),
   },
   plugins: debug ? [] : [
     new webpack.optimize.DedupePlugin(),
