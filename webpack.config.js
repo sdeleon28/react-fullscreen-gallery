@@ -4,9 +4,9 @@ const webpack = require('webpack');
 const debug = process.env.NODE_ENV !== 'production';
 
 module.exports = {
-  context: path.join(__dirname, '/examples/src'),
+  context: __dirname,
   devtool: debug ? '#eval-source-map' : null,
-  entry: './js/index.js',
+  entry: './examples/src/js/index.js',
   module: {
     loaders: [
       {
