@@ -40,8 +40,8 @@ GalleryContainer.propTypes = {
   images: pt.arrayOf(pt.shape({
     imageUrl: pt.string.isRequired,
     thumbnailUrl: pt.string.isRequired,
-    title: pt.string.isRequired,
-    alt: pt.string.isRequired,
+    title: pt.string,
+    alt: pt.string,
   })),
 };
 

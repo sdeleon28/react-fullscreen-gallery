@@ -43,8 +43,8 @@ const Thumbnail = ({ thumbnailUrl, title, alt, index, selected, onSelected }) =>
 Thumbnail.propTypes = {
   imageUrl: pt.string.isRequired,
   thumbnailUrl: pt.string.isRequired,
-  title: pt.string.isRequired,
-  alt: pt.string.isRequired,
+  title: pt.string,
+  alt: pt.string,
   index: pt.number.isRequired,
   selected: pt.bool.isRequired,
   onSelected: pt.func,
