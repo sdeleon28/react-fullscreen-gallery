@@ -36,7 +36,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, '/examples/dist'),
-    publicPath: '/',
+    publicPath: '/react-fullscreen-gallery/',
     filename: 'index.js',
   },
   devServer: {
