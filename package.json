@@ -1,6 +1,6 @@
 {
   "name": "react-fullscreen-gallery",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "scripts": {
     "prepublish": "npm run build",
