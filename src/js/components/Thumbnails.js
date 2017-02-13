@@ -1,7 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
 import Thumbnail from './Thumbnail';
-
+import imagesLoaded from 'imagesloaded';
 
 require('jscrollpane');
 
@@ -39,7 +39,7 @@ class Thumbnails extends React.Component {
 
   componentDidMount() {
     window.addEventListener('resize', this.setupScrollbar);
-    setTimeout(this.setupScrollbar, 100);
+    imagesLoaded(this.list, this.setupScrollbar);
   }
 
   componentWillUnmount() {
@@ -58,10 +58,10 @@ class Thumbnails extends React.Component {
         if (isScrollable) {
           // Style the scrollbar
           $(event.target).find('.jspHorizontalBar, .jspTrack').css({ background: 'transparent' });
-          $(event.target).find('.jspDrag').css({ background: '#505050' });
+          $(event.target).find('.jspDrag').css({ background: '#505050', top: 7 });
           // When the scrollbar is added, make some room for it so that it doesn't appear too close
           // to the thumbnails.
-          $(event.target).find('.jspContainer').css({ paddingBottom: 14 });
+          $(event.target).find('.jspContainer').css({ paddingBottom: 4 });
         }
       }
     ).jScrollPane();
@@ -74,7 +74,10 @@ class Thumbnails extends React.Component {
         ref={listContainer => { this.listContainer = listContainer; }}
         style={styles.container}
       >
-        <ul style={styles.list}>
+        <ul
+          ref={list => { this.list = list; }}
+          style={styles.list}
+        >
           {
             images.map((imageData, index) => (
               <li key={index} style={styles.listItem}>

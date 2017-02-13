@@ -21,6 +21,7 @@
   "homepage": "https://github.com/sdeleon28/react-fullscreen-gallery#readme",
   "dependencies": {
     "copy-webpack-plugin": "^4.0.1",
+    "imagesloaded": "^4.1.1",
     "jquery": "^3.1.1",
     "jscrollpane": "^2.0.22",
     "react": "^15.4.1",
